@@ -1,76 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="pt-br">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joken po</title>
+    <link rel="stylesheet" href="style.css">
+   
+
 </head>
 <body>
-  <figure>
-  <img class="logo" src="./assets/logo.gif">
-  </figure>
 
-  
-
-  <main> 
-    <div class="real">
-    <label> Converter <b>de</b>  </label>
-        <select>
-          <option>R$ Real Brasileiro</option>
-        </select>
-   
-    </div>
-
-    
-    <div class="Dollar">
-    <label> Converter <b>para</b></label>
-        <select class="currency-select">
-          <option value="Dollar">U$ Dollar americano</option>
-          <option value="Euro">€ Euro</option>
-        </select>
-         
-    
-    </div>
+    <div class="container">
+        <h1 class="titulo">Jokem po</h1>
+        <div>
+    <button id="rock" onclick="playhuman('rock')">&#x270A;</button>
+        <button id="paper" onclick="playhuman('paper')">&#x1F590;</button>
+        <button id="scissors" onclick="playhuman('scissors')" >&#x270C;</button>
+        </div>
+        <p class="result"></p>
+        <div class="pontos">
+        <p class="mypoints">seus pontos : <span class="human-score"></span></p> 
+        <p class="machinepoints">pontos da máquina: <span class="machine-score"></span></p>
+            </div>
+        </div>
 
     
-    <div class="valor">
-    <label> Valor</label>
-        <input class="input-currency" placeholder="Coloque o seu valor aqui">
-    
-    </div>
-
-    <br>
-    <br>
-
-    <button class="convert-button">Converter</button>
-
-    
-
-    <br>
-    <div class="imagens">
-
-    <img src="./assets/brasil 2.png">
-    <p>Real</p>
-    <p class="currency-value-to-converted">R$ 10.000,00</p>
-
-    <img src="./assets/seta.png">
-    <br>
-
-    <img class = "ImageCountry" src="./assets/estados-unidos (1) 1.png">
-    <p id="Currency-name" class="Dollar-americano">Dollar americano</p>
-    <p class="currency-value-converted">10.000,00</p>
-
-
-
-    </div>
-    
-</main>
-  
-
-
-
 </body>
 
-<script src="./variaveis.js"></script>
+ <script src="./jokempo.js"></script>
 </html>
